@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page</title>
+    <title>Studio Moda</title>
     <!-- Add Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Your Website</a>
+    <a class="navbar-brand" href="#">Studio Moda</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,9 +32,23 @@
 </nav>
 
 <!-- Quiénes Somos Section -->
-<section id="inicio" class="container">
-    <h2>Quiénes Somos</h2>
-    <!-- Add your content here -->
+<section id="inicio" class="container-fluid p-0">
+    <div class="row">
+        <div class="col-12">
+            <div class="position-relative">
+                <!-- Large screen image (hidden on mobile) -->
+                <img src="https://cdn.shopify.com/s/files/1/0822/8470/8151/files/hero_image.png?v=1693623869" alt="Banner Image" class="img-fluid d-none d-md-block">
+                
+                <!-- Mobile screen image (hidden on large screens) -->
+                <img src="https://cdn.shopify.com/s/files/1/0822/8470/8151/files/banner_screen_mobile.png?v=1695943894" alt="Banner Image" class="img-fluid w-100 d-md-none">
+                
+                <div class="overlay p-2">
+                    <h1 class="text-center text-white">Quiénes Somos</h1>
+                    <p class="text-center text-white">Bienvenidos a Studio Moda, tu socio confiable en corte y confección.<br>Descubre nuestras soluciones de maquila de uniformes y ropa personalizada, diseñadas para tu éxito.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- Servicios Section -->
